@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vegas Uber Dude — QR Sticker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* STICKER — 4x4 inch at 300dpi = 1200x1200px */
+    .sticker {
+      width: 1200px;
+      height: 1200px;
+      background: #0d0d0d;
+      border-radius: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      border: 6px solid #c9a84c;
+      box-shadow: 0 0 60px rgba(201,168,76,0.3);
+      gap: 30px;
+    }
+
+    .sticker-logo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #c9a84c;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(201,168,76,0.4);
+    }
+
+    .sticker-name {
+      font-size: 72px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .sticker-name span {
+      color: #c9a84c;
+    }
+
+    .sticker-tagline {
+      font-size: 36px;
+      color: #8892a4;
+      text-align: center;
+    }
+
+    .qr-wrap {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 24px;
+      border: 4px solid #c9a84c;
+    }
+
+    .qr-wrap img {
+      width: 420px;
+      height: 420px;
+      display: block;
+    }
+
+    .scan-text {
+      font-size: 44px;
+      font-weight: 900;
+      color: #c9a84c;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .url-text {
+      font-size: 30px;
+      color: #555;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    /* PRINT VERSION */
+    @media print {
+      body { background: white; padding: 0; }
+      .sticker {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sticker">
+    <img src="./logo.jpg" class="sticker-logo" alt="Vegas Uber Dude">
+    <div class="sticker-name">Vegas <span>Uber</span> Dude</div>
+    <div class="sticker-tagline">Las Vegas Entrepreneur</div>
+    <div class="qr-wrap">
+      <img src="./qr-sticker.png" alt="QR Code">
+    </div>
+    <div class="scan-text">📱 Scan Me!</div>
+    <div class="url-text">vegasuberdude.vercel.app</div>
+  </div>
+</body>
+</html>
