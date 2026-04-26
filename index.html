@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Vegas Uber Dude — Links</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+    }
+
+    /* PROFILE */
+    .profile { text-align: center; margin-bottom: 32px; }
+    .logo-wrap {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 16px;
+      border: 3px solid #c9a84c;
+      box-shadow: 0 0 24px rgba(201,168,76,0.4);
+    }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .profile h1 { font-size: 1.5rem; font-weight: 900; color: #fff; letter-spacing: 1px; }
+    .profile p { color: #8892a4; font-size: 0.88rem; margin-top: 6px; }
+
+    /* INSTAGRAM */
+    .ig-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: #fff; text-decoration: none;
+      padding: 8px 20px; border-radius: 20px;
+      font-size: 0.85rem; font-weight: 700;
+      margin-top: 12px;
+      transition: opacity 0.2s;
+    }
+    .ig-btn:hover { opacity: 0.85; }
+
+    /* SECTIONS */
+    .section { width: 100%; max-width: 480px; margin-bottom: 28px; }
+    .section-label {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: #c9a84c;
+      margin-bottom: 12px; padding-left: 4px;
+    }
+
+    /* LINK CARDS */
+    .link-card {
+      display: flex; align-items: center; gap: 14px;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .link-card:hover {
+      border-color: #c9a84c;
+      background: #1f1f1f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+    .link-card:active { transform: translateY(0); }
+    .link-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; flex-shrink: 0;
+    }
+    .link-text { flex: 1; }
+    .link-text strong { display: block; font-size: 0.95rem; font-weight: 700; color: #fff; }
+    .link-text span { font-size: 0.78rem; color: #8892a4; margin-top: 2px; display: block; }
+    .link-arrow { color: #3a3a3a; font-size: 1rem; }
+    .link-card:hover .link-arrow { color: #c9a84c; }
+
+    /* PRICE BADGE */
+    .price-badge {
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: #c9a84c;
+      font-size: 0.72rem; font-weight: 700;
+      padding: 3px 8px; border-radius: 10px;
+      margin-top: 4px; display: inline-block;
+    }
+
+    /* ICON BG COLORS */
+    .icon-scripture { background: rgba(201,168,76,0.12); }
+    .icon-horoscope { background: rgba(124,58,237,0.15); }
+    .icon-quotes { background: rgba(52,152,219,0.15); }
+    .icon-scripture-shop { background: rgba(201,168,76,0.12); }
+    .icon-horoscope-shop { background: rgba(124,58,237,0.15); }
+    .icon-nati { background: rgba(39,174,96,0.15); }
+    .icon-ig { background: linear-gradient(135deg, rgba(131,58,180,0.2), rgba(253,29,29,0.2)); }
+
+    /* FOOTER */
+    footer {
+      margin-top: 20px;
+      font-size: 0.72rem; color: #3a3a3a;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PROFILE -->
+  <div class="profile">
+    <div class="logo-wrap">
+      <img src="./logo.jpg" alt="Vegas Uber Dude">
+    </div>
+    <h1>Vegas Uber Dude</h1>
+    <p>Las Vegas, NV · Entrepreneur · Driver</p>
+    <a href="https://instagram.com/vegasuberdude" target="_blank" class="ig-btn">
+      📸 @vegasuberdude
+    </a>
+  </div>
+
+  <!-- SMS SUBSCRIPTIONS -->
+  <div class="section">
+    <div class="section-label">📱 Daily SMS Subscriptions</div>
+
+    <a href="https://textsfromgoddaily.com" target="_blank" class="link-card">
+      <div class="link-icon icon-scripture">✝️</div>
+      <div class="link-text">
+        <strong>Daily Scripture</strong>
+        <span>God's Word delivered to your phone</span>
+        <span class="price-badge">$5/month · 7-day free trial</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+
+    <a href="https://horoscopeping.com" target="_blank" class="link-card">
+      <div class="link-icon icon-horoscope">⭐</div>
+      <div class="link-text">
+        <strong>Daily Horoscope</strong>
+        <span>Your zodiac reading every morning</span>
+        <span class="price-badge">$5/month</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+
+    <a href="https://quoteful.org" target="_blank" class="link-card">
+      <div class="link-icon icon-quotes">💬</div>
+      <div class="link-text">
+        <strong>Daily Quotes</strong>
+        <span>Motivation straight to your texts</span>
+        <span class="price-badge">$5/month</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+  </div>
+
+  <!-- MERCH SHOPS -->
+  <div class="section">
+    <div class="section-label">🛍️ Merch Shops</div>
+
+    <a href="https://textsfromgod.myshopify.com" target="_blank" class="link-card">
+      <div class="link-icon icon-scripture-shop">✝️</div>
+      <div class="link-text">
+        <strong>Scripture Merch Shop</strong>
+        <span>Faith-inspired tees, hoodies & totes</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+
+    <a href="https://horoscopeping.myshopify.com" target="_blank" class="link-card">
+      <div class="link-icon icon-horoscope-shop">🔮</div>
+      <div class="link-text">
+        <strong>Horoscope Merch Shop</strong>
+        <span>Zodiac apparel for every sign</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+  </div>
+
+  <!-- NATI -->
+  <div class="section">
+    <div class="section-label">🍄 Health & Wellness</div>
+
+    <a href="https://funwithnati.com" target="_blank" class="link-card">
+      <div class="link-icon icon-nati">🍄</div>
+      <div class="link-text">
+        <strong>NATI Mushroom Supplements</strong>
+        <span>Natural wellness, real results</span>
+      </div>
+      <span class="link-arrow">›</span>
+    </a>
+  </div>
+
+  <footer>© 2025 Vegas Uber Dude · Las Vegas, NV</footer>
+
+</body>
+</html>
